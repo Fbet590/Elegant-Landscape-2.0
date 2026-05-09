@@ -230,11 +230,8 @@ export function HeroSection() {
         {/* Left Text */}
         <div className="max-w-xl">
           <h1 className="font-[family-name:var(--font-poppins)] font-bold text-[2.44rem] leading-tight text-[#ffffff] md:text-[2.925rem] lg:text-[3.575rem] lg:leading-snug text-balance">
-            Unlock Stunning Outdoor Spaces with Our Expert Design & Installation
+            $15.5K. New Turf. New Pavers. New Outdoor Space. Done.
           </h1>
-          <p className="mt-4 text-base md:text-lg text-[#d4d0c8] leading-relaxed max-w-md uppercase tracking-wide">
-            Check off the options you&apos;re looking for below and we&apos;ll do the rest!
-          </p>
 
           {/* Value Bullets */}
           <ul className="mt-6 flex flex-col gap-3">
