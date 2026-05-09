@@ -232,9 +232,6 @@ export function HeroSection() {
           <h1 className="font-[family-name:var(--font-poppins)] font-bold text-[2.93rem] leading-tight text-[#ffffff] md:text-[3.51rem] lg:text-[4.29rem] lg:leading-snug text-balance">
             $15.5K. New Turf. New Pavers. New Outdoor Space. Done.
           </h1>
-          <p className="mt-4 text-base md:text-lg text-[#d4d0c8] leading-relaxed">
-            Answer our quick form and we&apos;ll get in touch. No Pressure. No Obligation.
-          </p>
 
           {/* Value Bullets */}
           <ul className="mt-6 flex flex-col gap-3">
