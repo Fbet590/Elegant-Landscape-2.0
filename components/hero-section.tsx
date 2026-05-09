@@ -229,9 +229,16 @@ export function HeroSection() {
       <div className="relative mx-auto flex max-w-7xl flex-col gap-10 px-6 py-14 lg:flex-row lg:items-center lg:justify-between lg:py-20">
         {/* Left Text */}
         <div className="max-w-xl">
-          <h1 className="font-[family-name:var(--font-poppins)] font-bold text-[2.44rem] leading-tight text-[#ffffff] md:text-[2.925rem] lg:text-[3.575rem] lg:leading-snug text-balance">
+          <p className="text-lg md:text-xl font-semibold uppercase tracking-wide mb-3">
+            <span className="text-[#d4a017]">Not Every Home Qualifies.</span>{" "}
+            <span className="text-[#ffffff]">Yours Might.</span>
+          </p>
+          <h1 className="font-[family-name:var(--font-poppins)] font-bold text-[2.93rem] leading-tight text-[#ffffff] md:text-[3.51rem] lg:text-[4.29rem] lg:leading-snug text-balance">
             $15.5K. New Turf. New Pavers. New Outdoor Space. Done.
           </h1>
+          <p className="mt-4 text-base md:text-lg text-[#d4d0c8] leading-relaxed">
+            Answer our quick form and we&apos;ll get in touch. No Pressure. No Obligation.
+          </p>
 
           {/* Value Bullets */}
           <ul className="mt-6 flex flex-col gap-3">
@@ -268,8 +275,12 @@ export function HeroSection() {
         {/* Right: Multi-step Form */}
         <div className="w-full max-w-sm">
           <div className="rounded-2xl border-[3px] border-[#2d5016] bg-background shadow-[0_20px_60px_-12px_rgba(0,0,0,0.4)] overflow-hidden">
-            {/* Slim accent bar */}
-            <div className="h-1.5 bg-[#2d5016]" />
+            {/* Form headline */}
+            <div className="bg-[#2d5016] px-5 py-4">
+              <h2 className="text-lg md:text-xl font-bold text-[#ffffff] text-center leading-snug">
+                See If You Qualify for Our $15.5K Outdoor Transformation
+              </h2>
+            </div>
 
             <div className="px-5 pt-4 pb-5">
               {/* Step dots */}
