@@ -4,18 +4,6 @@ import { useState, useRef, useEffect } from "react"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight, Check, CheckCircle, Shield, Sparkles, CreditCard, Clock, User, Mail, Phone as PhoneIcon } from "lucide-react"
 
-const DEFAULT_BUDGET_OPTIONS = [
-  { label: "$30,000 - $40,000" },
-  { label: "$40,000 - $75,000" },
-  { label: "$85,000+" },
-]
-
-const PATIO_COVER_BUDGET_OPTIONS = [
-  { label: "$7,000 - $10,000" },
-  { label: "$10,000 - $15,000" },
-  { label: "$25,000+" },
-]
-
 type StepConfig = {
   question: string
   hint?: string
@@ -26,40 +14,8 @@ type StepConfig = {
   icon?: string
 }
 
-function getSteps(projectSelections: string[]): StepConfig[] {
-  // If ONLY "Patio Cover" is selected (and nothing else), use patio cover budget
-  const onlyPatioCover =
-    projectSelections.length === 1 && projectSelections.includes("Patio Cover")
-
+function getSteps(): StepConfig[] {
   return [
-    {
-      question: "What kind of project do you have in mind?",
-      hint: "Select all that apply",
-      type: "multi" as const,
-      options: [
-        { label: "Artificial Turf" },
-        { label: "Paver Installation" },
-        { label: "Concrete Driveway/Patio" },
-        { label: "Patio Cover" },
-        { label: "Pool or Spa" },
-      ],
-    },
-    {
-      question: "What's your approximate budget?",
-      hint: "This helps us tailor the right options for you",
-      type: "radio" as const,
-      options: onlyPatioCover ? PATIO_COVER_BUDGET_OPTIONS : DEFAULT_BUDGET_OPTIONS,
-    },
-    {
-      question: "Are you flexible with your budget for premium quality?",
-      hint: "Premium materials come with a lifetime warranty",
-      type: "radio" as const,
-      options: [
-        { label: "Yes, I prefer premium quality" },
-        { label: "Maybe, depends on options" },
-        { label: "No, I have a fixed budget" },
-      ],
-    },
     {
       question: "What's your name?",
       hint: "So we know who to ask for",
@@ -106,9 +62,7 @@ export function HeroSection() {
   const contentRef = useRef<HTMLDivElement>(null)
   const prevStepRef = useRef(step)
 
-  // Compute steps dynamically based on project selections
-  const projectSelections = (answers[0] as string[]) || []
-  const STEPS = getSteps(projectSelections)
+  const STEPS = getSteps()
 
   useEffect(() => {
     const el = contentRef.current
@@ -159,9 +113,6 @@ export function HeroSection() {
     if (isLastStep) {
       // Build payload from all answers
       const payload = {
-        project_types: (answers[0] as string[]) || [],
-        budget: answers[1] as string || "",
-        budget_flexibility: answers[2] as string || "",
         name: textInputs.name,
         email: textInputs.email,
         phone: textInputs.phone,
@@ -182,7 +133,6 @@ export function HeroSection() {
       if (typeof window !== "undefined" && typeof window.fbq === "function") {
         window.fbq("track", "Lead", {
           content_name: "Free Quote Request",
-          content_category: (payload.project_types || []).join(", "),
           value: 0,
           currency: "USD",
         })
