@@ -238,7 +238,7 @@ export function HeroSection() {
             <li className="flex items-start gap-2.5">
               <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-[#d4a017]" />
               <span className="text-base font-semibold text-[#ffffff] md:text-lg">
-                Full Outdoor Remodeling &mdash; Pavers, Pools, Patio Covers &amp; Fire Features
+                Full Outdoor Remodeling &mdash; Premium Pavers, Top-Tier Turf - &amp; Other Add-Ons Available
               </span>
             </li>
             <li className="flex items-start gap-2.5">
