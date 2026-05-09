@@ -229,10 +229,6 @@ export function HeroSection() {
       <div className="relative mx-auto flex max-w-7xl flex-col gap-10 px-6 py-14 lg:flex-row lg:items-center lg:justify-between lg:py-20">
         {/* Left Text */}
         <div className="max-w-xl">
-          <p className="text-lg md:text-xl font-semibold uppercase tracking-wide mb-3">
-            <span className="text-[#d4a017]">Not Every Home Qualifies.</span>{" "}
-            <span className="text-[#ffffff]">Yours Might.</span>
-          </p>
           <h1 className="font-[family-name:var(--font-poppins)] font-bold text-[2.93rem] leading-tight text-[#ffffff] md:text-[3.51rem] lg:text-[4.29rem] lg:leading-snug text-balance">
             $15.5K. New Turf. New Pavers. New Outdoor Space. Done.
           </h1>
@@ -277,6 +273,10 @@ export function HeroSection() {
           <div className="rounded-2xl border-[3px] border-[#2d5016] bg-background shadow-[0_20px_60px_-12px_rgba(0,0,0,0.4)] overflow-hidden">
             {/* Form headline */}
             <div className="bg-[#2d5016] px-5 py-4">
+              <p className="text-sm font-semibold uppercase tracking-wide text-center mb-2">
+                <span className="text-[#d4a017]">Not Every Home Qualifies.</span>{" "}
+                <span className="text-[#ffffff]">Yours Might.</span>
+              </p>
               <h2 className="text-lg md:text-xl font-bold text-[#ffffff] text-center leading-snug">
                 See If You Qualify for Our $15.5K Outdoor Transformation
               </h2>
