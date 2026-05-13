@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
-import { PricingSection } from "@/components/pricing-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { GallerySection } from "@/components/gallery-section"
 import { FaqSection } from "@/components/faq-section"
@@ -12,7 +11,6 @@ export default function Home() {
     <main>
       <Navbar />
       <HeroSection />
-      <PricingSection />
       <TestimonialsSection />
       <GallerySection />
       <FaqSection />

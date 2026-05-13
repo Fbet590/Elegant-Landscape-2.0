@@ -223,7 +223,7 @@ export function HeroSection() {
           className="object-cover object-[center_30%]"
           priority
         />
-        <div className="absolute inset-0 bg-[#000000]/50" />
+        <div className="absolute inset-0 bg-[#000000]/60" />
       </div>
 
       <div className="relative mx-auto flex max-w-7xl flex-col gap-10 px-6 py-14 lg:flex-row lg:items-center lg:justify-between lg:py-20">
