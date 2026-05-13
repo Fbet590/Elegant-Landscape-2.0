@@ -196,7 +196,7 @@ export function HeroSection() {
             className="object-cover object-[center_30%]"
             priority
           />
-          <div className="absolute inset-0 bg-[#000000]/50" />
+<div className="absolute inset-0 bg-[#000000]/60" />
         </div>
         <div className="relative mx-auto flex max-w-7xl items-center justify-center px-6 py-24">
           <div className="w-full max-w-md rounded-xl bg-background p-8 text-center shadow-2xl">
@@ -223,13 +223,13 @@ export function HeroSection() {
           className="object-cover object-[center_30%]"
           priority
         />
-        <div className="absolute inset-0 bg-[#000000]/50" />
+        <div className="absolute inset-0 bg-[#000000]/60" />
       </div>
 
       <div className="relative mx-auto flex max-w-7xl flex-col gap-10 px-6 py-14 lg:flex-row lg:items-center lg:justify-between lg:py-20">
         {/* Left Text */}
         <div className="max-w-xl">
-          <h1 className="font-[family-name:var(--font-poppins)] font-bold text-[2.93rem] leading-tight text-[#ffffff] md:text-[3.51rem] lg:text-[4.29rem] lg:leading-snug text-balance">
+          <h1 className="font-[family-name:var(--font-poppins)] font-bold text-[3.24rem] leading-tight text-[#ffffff] md:text-[3.82rem] lg:text-[4.6rem] lg:leading-snug text-balance">
             $15.5K. New Turf. New Pavers. New Outdoor Space. Done.
           </h1>
 
@@ -261,15 +261,15 @@ export function HeroSection() {
             href="#quote"
             className="mt-6 inline-block rounded-md border-2 border-[#ffffff] bg-[#2d5016] px-5 py-2.5 text-[0.87rem] font-extrabold uppercase tracking-wider text-[#ffffff] transition-colors hover:bg-[#234012]"
           >
-            Get a Quote
+            Check If My Space Qualifies
           </a>
         </div>
 
         {/* Right: Multi-step Form */}
         <div className="w-full max-w-sm">
-          <div className="rounded-2xl border-[3px] border-[#2d5016] bg-background shadow-[0_20px_60px_-12px_rgba(0,0,0,0.4)] overflow-hidden">
+          <div className="rounded-2xl border-[3px] border-[#d4a017] bg-background shadow-[0_25px_80px_-12px_rgba(212,160,23,0.35)] overflow-hidden ring-1 ring-[#d4a017]/20">
             {/* Form headline */}
-            <div className="bg-[#2d5016] px-5 py-4">
+            <div className="bg-gradient-to-br from-[#2d5016] to-[#1f3a0f] px-5 py-5">
               <p className="text-sm font-semibold uppercase tracking-wide text-center">
                 <span className="text-[#d4a017]">Not Every Home Qualifies.</span>{" "}
                 <span className="text-[#ffffff]">Yours Might.</span>
@@ -416,7 +416,7 @@ export function HeroSection() {
                       : "bg-[#2d5016]/25 cursor-not-allowed"
                   }`}
                 >
-                  {isLastStep ? "Get My Quote" : "Continue"}
+                  {isLastStep ? "Check If My Space Qualifies" : "Continue"}
                   {!isLastStep && <ChevronRight className="h-3.5 w-3.5" />}
                 </button>
               </div>
