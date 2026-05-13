@@ -5,7 +5,7 @@ export async function POST(request: Request) {
     const payload = await request.json()
 
     const webhookResponse = await fetch(
-      "https://services.leadconnectorhq.com/hooks/E6Zx9hgkIzR16FVsQlAg/webhook-trigger/4702e753-a302-4fb6-8a95-6fe784cea9c2",
+      "https://services.leadconnectorhq.com/hooks/E6Zx9hgkIzR16FVsQlAg/webhook-trigger/5fWDz8GiCY8OIP4Tc0fW",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
