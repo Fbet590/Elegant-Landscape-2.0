@@ -230,7 +230,8 @@ export function HeroSection() {
         {/* Left Text */}
         <div className="max-w-xl">
           <h1 className="font-[family-name:var(--font-poppins)] font-bold text-[3.5rem] leading-tight text-[#ffffff] md:text-[4.1rem] lg:text-[5rem] lg:leading-snug text-balance">
-            $15.5K. New Turf. New Pavers. Done.
+            $15.5K. New Turf. New Pavers. <br />
+            Done.
           </h1>
 
           {/* Value Bullets */}
