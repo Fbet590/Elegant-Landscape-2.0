@@ -229,7 +229,7 @@ export function HeroSection() {
       <div className="relative mx-auto flex max-w-7xl flex-col gap-10 px-6 py-14 lg:flex-row lg:items-center lg:justify-between lg:py-20">
         {/* Left Text */}
         <div className="max-w-xl">
-          <h1 className="font-[family-name:var(--font-poppins)] font-bold text-[3.24rem] leading-tight text-[#ffffff] md:text-[3.82rem] lg:text-[4.6rem] lg:leading-snug text-balance">
+          <h1 className="font-[family-name:var(--font-poppins)] font-bold text-[3.5rem] leading-tight text-[#ffffff] md:text-[4.1rem] lg:text-[5rem] lg:leading-snug text-balance">
             $15.5K. New Turf. New Pavers. Done.
           </h1>
 
