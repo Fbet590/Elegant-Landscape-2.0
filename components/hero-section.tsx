@@ -261,7 +261,7 @@ export function HeroSection() {
             href="#quote"
             className="mt-6 inline-block rounded-md border-2 border-[#ffffff] bg-[#2d5016] px-5 py-2.5 text-[0.87rem] font-extrabold uppercase tracking-wider text-[#ffffff] transition-colors hover:bg-[#234012]"
           >
-            Get a Quote
+            Check If My Space Qualifies
           </a>
         </div>
 
